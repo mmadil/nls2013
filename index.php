@@ -4,7 +4,7 @@ include('includes/header.php');
 
 ?>
 
-<h1> How to use this page ? </h1>
+<h2> How to use this page ? </h2>
 
 <?php
 

@@ -4,7 +4,7 @@ include('includes/header.php')
 
 ?>
 
-<h1> Stalls </h1>
+<h2> Stalls </h2>
 
 <?php
 

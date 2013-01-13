@@ -4,7 +4,7 @@ include('includes/header.php')
 
 ?>
 
-<h1> Cashier </h1>
+<h2> Cashier </h2>
 
 <?php
 
