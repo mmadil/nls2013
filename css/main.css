@@ -135,7 +135,43 @@ ul
  list-style:none;
 }
 
+table td
+{
+ padding:0 2em;
+}
 
+ul table td
+{
+ 
+ margin:auto;
+ padding:0 10em;
+}
+
+ul table td
+{
+ margin:auto;
+ border:2px black;
+ border-style:solid;
+}
+
+#login
+{
+ margin:auto;
+ clear:both;
+}
+
+#login table td
+{
+ margin:auto;
+ clear:both;
+ padding:0 2em;
+ 
+}
+
+#wrapper a img
+{
+ width:40%;
+}
 
 /* ==========================================================================
    Helper classes
