@@ -19,7 +19,7 @@ include('includes/header.php')
 
  }
   else
-   die("Invalid username or password!");
+   die("Please enter valid combination of username and password to continue!");
 
 ?>
 

@@ -1,11 +1,19 @@
 <?php
 
+require('includes/connect.php');
+
+?>
+
+
+<?php
+
 include('includes/header.php')
 
 ?>
 
 <h2> Cashier </h2>
 
+<div id="not-connected">
 <?php
 
  $username = $_POST['username'];
@@ -19,10 +27,10 @@ include('includes/header.php')
 
  }
   else
-   die("Invalid username or password!");
+   die("Please enter valid combination of username and password to continue!");
 
 ?>
-
+</div>
 
 <?php
 
