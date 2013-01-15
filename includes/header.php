@@ -27,6 +27,6 @@
 
          <a href="http://www.aiesecdelhiuniversity.org"><img src="img/logo.png"></a>
           <nav>
-           o ---- [ <a href="index.php">Home</a> | <a href="cashier.php">Cashier</a> | <a href="stalls.php">Stalls</a> ] ---- o
+           o ---- [ <a href="index.php">Home</a> | <a href="login.php">Login</a> ] ---- o
           </nav>
 
