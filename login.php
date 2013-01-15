@@ -6,31 +6,39 @@ include('includes/header.php');
 
 <h2> Login </h2>
 
-<div id="login">
+<div id="login-cashier">
 
-<?php
+<h3>Cashier</h3>
 
-echo '<form action="cashier.php" method="POST">';
-
-echo '<table>';
-echo '<tr> <td> User Name: </td><td><input type="text" name="username" autocomplete="off"> </td> </tr>';
-echo '<tr> <td> Password: </td><td><input type="password" name="passwd" autocomplete="off"> </td> </tr>';
-echo '<tr>'; 
-echo '<td></td> <td><input type="submit" name="submit" value="Log in"> </td>';
-echo '</tr>';
-echo '<tr>';
-echo '<td> Who are you? </td>';
-echo '</tr>';
-echo '<tr>';
-echo '<td> Cashier <input type="checkbox" name="cashier"></td>';
-echo '<td> Stall <input type="checkbox" name="stall"></td>';
-echo '</tr>';
-echo '</table>';
-echo '</form>';
-
-?>
+<form action="cashier.php" method="POST">
+ <table>
+  <tr> <td> User Name: </td><td><input type="text" name="username" autocomplete="off"> </td> </tr>
+  <tr> <td> Password: </td><td><input type="password" name="passwd" autocomplete="off"> </td> </tr>
+  <tr>
+   <td></td> <td><input type="submit" name="submit" value="Log in"> </td>
+  </tr>
+ </table>
+</form>
 
 </div>
+
+
+<div id="login-stalls">
+
+ <h3>Stalls</h3>
+
+ <form action="stalls.php" method="POST">
+  <table>
+   <tr> <td> User Name: </td><td><input type="text" name="username" autocomplete="off"> </td> </tr>
+   <tr> <td> Password: </td><td><input type="password" name="passwd" autocomplete="off"> </td> </tr>
+   <tr>
+   <td></td> <td><input type="submit" name="submit" value="Log in"> </td>
+   </tr>
+  </table>
+ </form>
+
+</div>
+
 
 <?php
 
