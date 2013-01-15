@@ -6,15 +6,23 @@ include('includes/header.php')
 
 <h2> Cashier </h2>
 
-<div id="login">
- <form action="login.php" method="POST">
-  <table>
-   <tr> <td> User Name: </td><td><input type="text" name="username" autocomplete="off"> </td> </tr>
-   <tr> <td> Password: </td><td><input type="password" name="passwd" autocomplete="off"> </td> </tr>
-   <td> <input type="submit" name="submit" value="Log in"> </td>
-  </table>
- </form>
-</div>
+<?php
+
+ $username = $_POST['username'];
+ $passwd = $_POST['passwd'];
+
+ if($username && $passwd)
+ {
+
+  $connect = mysql_connect("localhost","root","") or die("Couldn't connect!");
+  mysql_select_db("phplogin") or die("Couldn't find db");
+
+ }
+  else
+   die("Invalid username or password!");
+
+?>
+
 
 <?php
 
