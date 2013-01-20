@@ -32,7 +32,7 @@
 
   else
    {
-    die("User does not exist!");
+    die("Incorrect Username or Password!");
    }
 
  }
