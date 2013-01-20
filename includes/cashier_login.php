@@ -1,6 +1,8 @@
 <div id="login-failed">
 <?php
 
+session_start();
+
  $username = $_POST['username'];
  $passwd = $_POST['passwd'];
 
@@ -24,7 +26,12 @@
 
         if($username==$dbusername&&$passwd==$dbpasswd)
          {
-          ?> <? include('includes/recharge.php');?> <?
+	  $_SESSION['username']=$username;
+	  echo "Welcome ". $username . " !";
+           if($_SESSION['usename']=$username)
+           { require('recharge.php'); }
+           else
+            die("You have to login first");
          }
         else
          echo "Incorrect password!";
@@ -32,7 +39,7 @@
 
   else
    {
-    die("User does not exist!");
+    die("Incorrect Username or Password!");
    }
 
  }
