@@ -96,21 +96,40 @@ textarea {
 
 #wrapper
 {
- margin:auto;
  padding:2em;
- min-height:100%;
- height:auto;
- max-height:100%;
  clear:both;
  width:70%;
  text-align:center;
  background-color:white;
+ margin:auto;
+}
+
+footer
+{
+ width:100%;
+ position:fixed;
+ margin:-40px 0px;
+ text-align:center;
+ opacity:0.5;
+ clear:both;
+ background:#8BC9EA;
+ height:4em;
+ padding:1.2em;
+ bottom:0;
+ border:solid 1px blue;
+ border-top:solid 3px blue;
+}
+
+footer:hover
+{
+ margin:0px 0px;
+ opacity:1;
+ background:#2757A5;
 }
 
 body
 {
  font-family:Courier New, Courier, monospace;
- background-color:#2757A5;
 }
 
 nav 
