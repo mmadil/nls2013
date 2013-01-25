@@ -154,12 +154,12 @@ ul
  list-style:none;
 }
 
-table td
+#data table td
 {
  padding:0 2em;
 }
 
-ul table td
+#data ul table td
 {
  
  margin:auto;
@@ -205,6 +205,40 @@ ul table td
  margin:auto;
  float:right;
  padding:2em;
+}
+
+#container
+{
+ clear:both;
+}
+
+
+#recharge, #debit
+{
+ padding:2em;
+ width:30%;
+ margin:auto;
+ float:left;
+ text-align:right;
+}
+ 
+#list
+{
+ width:60%;
+ margin:auto;
+ float:right;
+}
+
+#list table td
+{
+ padding:0 1em;
+}
+
+#list ul table td
+{
+
+ margin:auto;
+ padding:0 5em;
 }
 
 /* ==========================================================================
