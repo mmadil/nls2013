@@ -1,4 +1,4 @@
-<div id="login-failed">
+<div id="container">
 <?php
 
  $username = $_POST['username'];
@@ -24,7 +24,12 @@
 
         if($username==$dbusername&&$passwd==$dbpasswd)
          {
-          echo "You're in!";
+	  $_SESSION['username']=$username;
+	  echo "<p>Welcome ". $username . " !</p>";
+	   if($_SESSION['username']=$username)
+  	    { require('debit.php'); }
+  	   else
+	     die("You have to login first");
          }
         else
          echo "Incorrect password!";

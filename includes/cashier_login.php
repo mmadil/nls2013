@@ -1,4 +1,4 @@
-<div id="login-failed">
+<div id="container">
 <?php
 
 session_start();
@@ -27,7 +27,7 @@ session_start();
         if($username==$dbusername&&$passwd==$dbpasswd)
          {
 	  $_SESSION['username']=$username;
-	  echo "Welcome ". $username . " !";
+	  echo "<p> Welcome ". $username . " !</p>";
            if($_SESSION['usename']=$username)
            { require('recharge.php'); }
            else
