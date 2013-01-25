@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(0);
-require('includes/connect.php')
+require('includes/connect.php');
 
 ?>
 
@@ -44,6 +44,8 @@ include('includes/header.php');
  </table>
 </form>
 
+<div id="data">
+
  <ul>
   <?php
   
@@ -74,6 +76,8 @@ include('includes/header.php');
 
  ?>
 </ul>
+
+</div>
 
 <?php
 
