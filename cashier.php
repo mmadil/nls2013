@@ -16,6 +16,7 @@ include('includes/header.php')
 
 <?php
 
+session_start();
 include('includes/cashier_login.php');
 
 ?>
