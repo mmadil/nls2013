@@ -1,4 +1,6 @@
 <?php
+session_start();
+include('includes/header.php');
 if($_POST['submit'])
 {
 
@@ -19,7 +21,6 @@ if($_POST['submit'])
   $row = mysql_fetch_assoc($query);
    
   $oldbalance = $row['balance'];
-
   $balance = $oldbalance+$balance_;
 
   mysql_query("UPDATE cash SET balance=$balance WHERE card_no=$card_no_");
@@ -34,8 +35,8 @@ if($_POST['submit'])
   mysql_query("INSERT INTO cash VALUES('','$card_no_','$balance_')"); 
  
  echo "Card number $card_no_ has been created with Rs. $balance_"."<br>";
- echo "Click <a href='cashier.php'> here </a> to go back.";
-
+ echo "Click <a href='cashier.php'> here</a> to go back.";
  }
 }
+include('includes/footer.php');
 ?>
